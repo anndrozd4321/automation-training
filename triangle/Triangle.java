@@ -27,8 +27,6 @@ public class Triangle {
     private static boolean check(double x, double y, double z) {
         return ((x + y) > z);
     }
-    public static void main(String[] args){
-
-    }
+    
 }
 
