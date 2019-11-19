@@ -4,7 +4,7 @@ import by.bsu.mmf.TriangleException;
 
 public class Triangle {
 
-    public static boolean TriangleFormed(double a, double b, double c) {
+    public static boolean triangleFormed(double a, double b, double c) {
 
         if (a <= 0 || b <= 0 || c <= 0) {
             throw new TriangleException("Side of negative length");

@@ -37,32 +37,32 @@ public class TriangleTest {
     }
 
     @Test
-    public void SumOfTwoSidesGreaterThird() {
+    public void sumOfTwoSidesGreaterThird() {
         Assert.assertTrue(Triangle.TriangleFormed(5.0, 4.0, 3.0));
     }
 
     @Test
-    public void SumOfTwoSidesLessThird() {
+    public void sumOfTwoSidesLessThird() {
         Assert.assertFalse(Triangle.TriangleFormed(5.0, 1.0, 3.0));
     }
 
     @Test
-    public void SumOfTwoSidesEqualsThird() { Assert.assertFalse(Triangle.TriangleFormed(7.0, 4.0, 3.0)); }
+    public void sumOfTwoSidesEqualsThird() { Assert.assertFalse(Triangle.TriangleFormed(7.0, 4.0, 3.0)); }
 
     @Test
-    public void IsoscelesTriangle() { Assert.assertTrue(Triangle.TriangleFormed(10.0, 10.0, 2)); }
+    public void isoscelesTriangle() { Assert.assertTrue(Triangle.TriangleFormed(10.0, 10.0, 2)); }
 
     @Test
-    public void EquilateralTriangle() { Assert.assertTrue(Triangle.TriangleFormed(10.0, 10.0, 10.0)); }
+    public void equilateralTriangle() { Assert.assertTrue(Triangle.TriangleFormed(10.0, 10.0, 10.0)); }
 
     @Test
-    public void RectangularTriangle() { Assert.assertTrue(Triangle.TriangleFormed(13.0, 12.0, 5.0)); }
+    public void rectangularTriangle() { Assert.assertTrue(Triangle.TriangleFormed(13.0, 12.0, 5.0)); }
 
     @Test
-    public void AllSidesAreMaxDouble() { Assert.assertTrue(Triangle.TriangleFormed(Double.MAX_VALUE, Double.MAX_VALUE, Double.MAX_VALUE)); }
+    public void allSidesAreMaxDouble() { Assert.assertTrue(Triangle.TriangleFormed(Double.MAX_VALUE, Double.MAX_VALUE, Double.MAX_VALUE)); }
 
     @Test
-    public void FailForIsoscelesTriangle() { Assert.assertFalse(Triangle.TriangleFormed(2.0, 2.0, 5.0)); }
+    public void failForIsoscelesTriangle() { Assert.assertFalse(Triangle.TriangleFormed(2.0, 2.0, 5.0)); }
 
     @Test(dataProvider = "zeroSides", expectedExceptions = { TriangleException.class })
     public void isDeflectZeroSides(Double a, Double b, Double c) {
