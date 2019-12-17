@@ -26,9 +26,6 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//input[@id='pick-up-location']")
     private WebElement pickUpLocation;
 
-    @FindBy(xpath = "//input[@id='is-drop-off']")
-    private WebElement dropOffLocationButton;
-
     @FindBy(xpath = "//input[@id='drop-off-location']")
     private WebElement dropOffLocation;
 
