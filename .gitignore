@@ -1,4 +1,11 @@
 *.db
 *.log
-target
-bin
+
+/bin
+
+.idea/
+*.iml
+
+*/target/*
+
+**/logs
