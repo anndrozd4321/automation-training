@@ -20,6 +20,7 @@ public class HomePage extends AbstractPage {
     public HomePage openPage() {
         driver.navigate().to(HOMEPAGE_URL);
         logger.info("Home page opened");
+        PageFactory.initElements(this.driver, this);
         return this;
     }
 
