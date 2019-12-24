@@ -113,7 +113,7 @@ public class HomePage extends AbstractPage {
     }
 
     public HomePage inputDropOffLocation(String dropLoc) {
-        dropOffLocationButton.click();
+        //dropOffLocationButton.click();
         pickUpLocation.sendKeys(dropLoc);
         return this;
     }
